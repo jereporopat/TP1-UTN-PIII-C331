@@ -17,10 +17,15 @@ header {
     color: #fff;
     padding: 1rem 0;
 }
-
+nav {
+    padding-left: 1050px;
+    justify-content: end;
+    align-items: end;
+    
+}
 nav ul {
+    display: flex;
     list-style: none;
-    text-align: center;
 }
 
 nav ul li {
@@ -32,19 +37,12 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+nav :hover {
+    color: #333;
+}
 
 main {
     padding: 2rem;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: rgba(144, 140, 139);
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 form {
@@ -76,4 +74,55 @@ button {
     color: #fff;
     border: none;
     border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(144, 140, 139);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.footer-col {
+    width: 33%;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover {
+    color: white;
+    padding-left: 2px;
+}
+
+.links a {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover {
+    color: #4d4f55;
+    background-color: white;
 }
