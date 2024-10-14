@@ -1,5 +1,5 @@
 * {
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -23,19 +23,18 @@ header {
 }
 /*Navbar*/
 .navbar {
-    width: 100%; /* Para que el nav ocupe todo el ancho de la página */
     display: flex;
+    justify-content: space-between; /* Alinea los elementos dejando un espacio en el medio */
+    align-items: center; /* Alinea verticalmente al centro si es necesario */
     height: 60px;
     max-width: 1200px;
     margin: 0 auto;
-    justify-content: space-between; /* Alinea los elementos a la derecha */
-    align-items: center; /* Alinea verticalmente al centro si es necesario */
-    padding-right: 1rem; /* Ajuste opcional para el margen a la derecha */
+    width: 100%; /* Para que el nav ocupe todo el ancho de la página */
 }
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 0;
+    padding-left: 0%;
 }
 .navbar .links {
     display: flex;
@@ -66,17 +65,7 @@ a:hover {
 .navbar .boton{
     display: block;    
 }
-} */
-/* nav ul li {
-    display: inline;
-    margin: 0 1rem;
 }
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-*/
 .saludo,.nosotros {
     margin: 20px; /* Espacio alrededor de la sección */
     padding: 20px; /* Espacio interno */
@@ -136,7 +125,7 @@ button {
     color: #fff;
     position: relative; /* Cambiar de fixed a relative si no quieres que quede fijo */
     width: 100%;
-position: 0;
+    position: 0;
     min-height: 100px;
     align-items: center;
     justify-content: center;
@@ -189,7 +178,7 @@ position: 0;
 /* Carousel Styles */
 .carousel {
     padding: 10px 0;
-    background-color: #e9e9e9;
+    background-color: white;
     text-align: center;
     border-radius: 15px;
 }
@@ -198,7 +187,7 @@ position: 0;
     display: flex;
     justify-content: center;
     overflow-x: scroll;
-    scroll-behavior: smooth; /* Para que el desplazamiento sea más suave */
+    scroll-behavior: smooth;
     gap: 20px;
     padding: 10px 0;
 }
@@ -221,22 +210,25 @@ position: 0;
     margin-top: 10px;
     font-size: 1rem;
 }
-
-
-.seccion{
-padding: 10px;
+.seccion {
+    padding: 10px;
+}
+.sub {
+    padding: 0px;
+    padding-bottom: 10px;
+}
+.subdos {
+    padding-bottom: 20px;
+}
+/* Cambiar el tamaño del carrusel */
+.carousel {
+    max-width: 500px;/* Ajustar el ancho del carrusel */
+    margin: 0 auto;/* Centrar el carrusel */
 }
 
-
-.sub{
-padding: 0px;
-padding-bottom: 10px;
-
+/* Cambiar la altura de las imágenes dentro del carrusel */
+.carousel-item img {
+    height: 700px;/* Ajustar la altura de las imágenes */
+    object-fit: contain;/* Ajuste para que las imágenes cubran el área sin deformarse */
+    width: 100%;
 }
-
-
-
-.ahre{
-padding-bottom: 20px;
-}
-

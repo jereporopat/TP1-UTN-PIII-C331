@@ -25,15 +25,19 @@
 
   <main>
     <section>
-      <h2>Iniciar Sesión</h2>
 <!-- <form action="validar.php" method="post"> -->
       <form>
+      <h2>Iniciar Sesión</h2>
+        <br>
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
 
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" required>
-
+        <!-- <button type="button" onclick="togglePassword()">Mostrar</button>  boton para mostrar contraseña con javascript-->
+        <label>
+          Recordar sesión <input type="checkbox" id="rememberMe">
+        </label>
         <button type="submit">Ingresar</button>
       </form>
     </section>
