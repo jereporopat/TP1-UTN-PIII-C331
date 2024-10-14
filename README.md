@@ -102,3 +102,11 @@ Necesitará construir las siguientes pagínas:
 > Happy coding!
 
 <img src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" width="150">
+
+
+
+¿Hay alguna mejora que pueda hacer en su envío?
+Mejoraria el tema de los fondos que por una cuestion de gustos no le añadi otros colores, no encontraba la manera que entre color de fondo y color de texto, quede "bonito" a la vista, y en algunos casos no se notaba el texto, por ende, opte por un fondo blanco. Me gustaria haber agregado cosas que comente (tanto en el archivo html y css) que o usaba javascript o no sabia como realizar mi idea. El footer tiene opciones las cuales quiero hacer navegables. El footer del SingIn no me quedo bien, en determinadas resoluciones si se ve bien, pero no en todas, no supe corregirlo. El carrusel del Home deberia verse distinto, pero por agregarlo con Boostrap me encontré limitado de recursos (quizas por no saber usar bien Boostrap). 
+
+¿Qué haría de manera diferente si se le asignara más tiempo?
+Me gustaria corregir y añadir mas cosas, creo que deje lo "basico" y la estructura de la idea, pero tengo varias cosas para agregar. Me gustaria un poco de ayuda para poder desarrollar todas estas ideas y creo que podria quedar algo mucho mejor.
