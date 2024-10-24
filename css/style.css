@@ -88,11 +88,9 @@ margin-bottom: 10px;
     margin-bottom: 15px; /* Espacio debajo del título */
 }
 
-/* Opcional: Ajustar los márgenes de los párrafos dentro de las secciones */
 .saludo p, .nosotros p {
     margin-bottom: 40px;/* Espacio entre párrafos */
 }
-/*hasta aca lo de gpt*/
 main {
     padding: 2rem;
 }
