@@ -12,6 +12,8 @@ body {
     padding: 0;
     background-color:#f5f5f5;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -19,7 +21,8 @@ header {
     background-color: rgba(213,142,157);
     position: relative;
     color: #fff;
-    padding: 0 2rem;
+    size: 100%;
+    width: 100%;
 }
 /*Navbar*/
 .navbar {
@@ -27,7 +30,6 @@ header {
     justify-content: space-between; /* Alinea los elementos dejando un espacio en el medio */
     align-items: center; /* Alinea verticalmente al centro si es necesario */
     height: 60px;
-    max-width: 1200px;
     margin: 0 auto;
     width: 100%; /* Para que el nav ocupe todo el ancho de la página */
 }
@@ -51,7 +53,7 @@ li {
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 1rem;
 }
 a:hover {
@@ -81,7 +83,44 @@ margin-bottom: 10px;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
-
+.container {
+    position: relative;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #af3294;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
 /* Estilos para el encabezado de cada sección */
 .saludo h1,.nosotros h2 {
     margin-top: 40px;
@@ -98,7 +137,7 @@ main {
 form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.8rem;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -112,7 +151,7 @@ form label {
 form input {
     width: 100%;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -127,6 +166,7 @@ button {
 }
 .footer {
     padding: 20px 50px;
+    margin-top: auto;
     background-color: rgba(144, 140, 139);
     color: #fff;
     position: relative; /* Cambiar de fixed a relative si no quieres que quede fijo */
@@ -181,7 +221,18 @@ button {
     margin-bottom: 10px;
     font-size: 20px;
 }
-/* Carousel Styles */
+.condiciones{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+/* Carousel Styles
 .carousel {
     padding: 10px 0;
     background-color: white;
@@ -210,11 +261,68 @@ button {
 .carousel-item img {
     max-width: 100%;
     border-radius: 10px;
+} */
+.boton{
+    display: none;
+}
+.img:hover+.boton{
+    display: block;
 }
 
 .carousel-item p {
     margin-top: 10px;
     font-size: 1rem;
+}
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3,auto);
+    justify-items: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+.item1{
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 100px;
+    height: 300px;
+}
+.item2,.item3,.item4{
+    grid-column: 2;
+    height: 100px;
+    width: 200px;
 }
 .seccion {
     padding: 10px;
