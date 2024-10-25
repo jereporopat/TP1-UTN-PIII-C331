@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -15,7 +13,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 header {
     text-decoration: none;
     background-color: rgba(213,142,157);
@@ -65,7 +62,7 @@ a:hover {
 .logo img{
     height: 50px;
     margin-left: 0px;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 /*Responsive*/
 @media (max-width: 992px) {
@@ -85,18 +82,16 @@ margin-bottom: 10px;
 }
 .container {
     position: relative;
-  }
-  
-  .image {
+}
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-  
-  .middle {
+}
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -105,35 +100,30 @@ margin-bottom: 10px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  .container:hover .image {
+}
+.container:hover .image {
     opacity: 0.3;
-  }
-  
-  .container:hover .middle {
+}
+.container:hover .middle {
     opacity: 1;
-  }
-  
-  .text {
+}
+.text {
     background-color: #af3294;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-  }
+}
 /* Estilos para el encabezado de cada sección */
 .saludo h1,.nosotros h2 {
     margin-top: 40px;
     margin-bottom: 15px; /* Espacio debajo del título */
 }
-
 .saludo p, .nosotros p {
     margin-bottom: 40px;/* Espacio entre párrafos */
 }
 main {
     padding: 2rem;
 }
-
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -142,12 +132,10 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 form label {
     display: block;
     margin: 1rem 0 0.5rem;
 }
-
 form input {
     width: 100%;
     padding: 0.5rem;
@@ -155,7 +143,6 @@ form input {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
 button {
     width: 100%;
     padding: 0.75rem;
@@ -232,43 +219,12 @@ button {
     height: 20px;
     margin-top: 20px;
 }
-/* Carousel Styles
-.carousel {
-    padding: 10px 0;
-    background-color: white;
-    text-align: center;
-    border-radius: 15px;
-}
-
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding: 10px 0;
-}
-
-.carousel-item {
-    min-width: 300px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    text-align: center;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    border-radius: 10px;
-} */
 .boton{
     display: none;
 }
 .img:hover+.boton{
     display: block;
 }
-
 .carousel-item p {
     margin-top: 10px;
     font-size: 1rem;
@@ -283,36 +239,29 @@ button {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
+}
+.column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
-  
-  .column img {
+}
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 800px) {
     .column {
-      flex: 50%;
-      max-width: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 600px) {
     .column {
-      flex: 100%;
-      max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
+}
 .item1{
     grid-column: 1;
     grid-row: 1/3;
@@ -329,20 +278,8 @@ button {
 }
 .sub {
     padding: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 45px;
 }
 .subdos {
     padding-bottom: 20px;
-}
-/* Cambiar el tamaño del carrusel */
-.carousel {
-    max-width: 500px;/* Ajustar el ancho del carrusel */
-    margin: 0 auto;/* Centrar el carrusel */
-}
-
-/* Cambiar la altura de las imágenes dentro del carrusel */
-.carousel-item img {
-    height: 700px;/* Ajustar la altura de las imágenes */
-    object-fit: contain;/* Ajuste para que las imágenes cubran el área sin deformarse */
-    width: 100%;
 }
